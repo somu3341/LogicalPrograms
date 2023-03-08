@@ -8,7 +8,7 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag) 
             {
-                Console.WriteLine("1.FibonacciSeries \n2.Perfect Number \n3.Prime Number \n4.Reverse Number \n5.Exit");
+                Console.WriteLine("1.FibonacciSeries \n2.Perfect Number \n3.Prime Number \n4.Reverse Number \n5.Day of Week \n6.Exit");
                 Console.WriteLine("Enter option which need's to be Executed");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option) 
@@ -37,7 +37,13 @@ namespace LogicalPrograms
                         ReverseNumber reverseNumber = new ReverseNumber();
                         reverseNumber.Reverse(rum);
                         break;
-                    case 5:
+                        case 5:
+                        Console.WriteLine("Enter Numbers From 0 to 6 Only");
+                        int wee= Convert.ToInt32(Console.ReadLine());
+                        DayOfWeek dayOfWeek = new DayOfWeek();
+                        dayOfWeek.week(wee);
+                        break;                     
+                    case 6:
                         flag = false;
                         break;
                 }
