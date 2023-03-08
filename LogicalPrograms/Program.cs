@@ -8,7 +8,7 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag) 
             {
-                Console.WriteLine("1.FibonacciSeries \n2.Exit");
+                Console.WriteLine("1.FibonacciSeries \n2.Perfect Number \n3.Exit");
                 Console.WriteLine("Enter option which need's to be Executed");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option) 
@@ -20,6 +20,12 @@ namespace LogicalPrograms
                         series.PrintSeries(num);
                         break;
                         case 2:
+                        Console.WriteLine("Enter the number");
+                        int sum = Convert.ToInt32(Console.ReadLine());
+                        PerfectNumber perfectNumber = new PerfectNumber();
+                        perfectNumber.perfect(sum);
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
