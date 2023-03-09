@@ -65,7 +65,7 @@ namespace LogicalPrograms
                         case 8:
                         Console.WriteLine("Enter number");
                         int mum= Convert.ToInt32(Console.ReadLine());
-                        CoupenNumber coupenNumber = new CoupenNumber();
+                        CouponNumber coupenNumber = new CouponNumber();
                         coupenNumber.DistinctCoupen(mum);
                         break;
                     case 9:

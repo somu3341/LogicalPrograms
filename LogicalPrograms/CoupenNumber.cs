@@ -1,22 +1,22 @@
 ﻿using System;
 namespace LogicalPrograms
 {
-    public class CoupenNumber
+    public class CouponNumber
     {
         public void DistinctCoupen(int num)
         {
-            int[] arr = new int[10];
+            int[] arr = new int[500];
             Random random = new Random();
             arr[0] = random.Next(0, num);
             for (int i = 1; i< 10; i++) 
             {
-                int coupen = random.Next(0, num);
+                int coupon = random.Next(0, num);
                 for (int j = 1; j< i; j++)
                 {
-                   if ( arr[j] != coupen)
-                        arr[i] = coupen;
+                   if ( arr[j] != coupon)
+                        arr[i] = coupon;
                 }
-                Console.WriteLine(coupen);
+                Console.WriteLine("coupon"+i+" "+coupon);
             }
         }
     }
