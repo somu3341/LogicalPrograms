@@ -9,7 +9,7 @@ namespace LogicalPrograms
             while (flag) 
             {
                 Console.WriteLine("1.FibonacciSeries \n2.Perfect Number \n3.Prime Number \n4.Reverse Number " +
-                    "\n5.Day of Week \n6.Temperature Conversion \n7.Monthaly Payment \n8.Coupen Number \n9.Exit");
+                    "\n5.Day of Week \n6.Temperature Conversion \n7.Monthaly Payment \n8.Coupen Number \n9. Stop Watch \n10.Exit");
                 Console.WriteLine("Enter option which need's to be Executed");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option) 
@@ -69,6 +69,10 @@ namespace LogicalPrograms
                         coupenNumber.DistinctCoupen(mum);
                         break;
                     case 9:
+                        StopWatch stopWatch = new StopWatch();
+                        stopWatch.Run();
+                        break;
+                    case 10:
                         flag = false;
                         break;
                 }
