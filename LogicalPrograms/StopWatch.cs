@@ -7,10 +7,11 @@ namespace LogicalPrograms
     {
         public void Run()
         {                        
-           const string Start = "start", Stop = "stop";
-           Console.WriteLine("Enter start to run the stop watch");
+           const string Start = "START", Stop = "STOP";
+           Console.WriteLine("Enter Start to run the stop watch");
            string start= Console.ReadLine();
-           TimeSpan timeSpan = TimeSpan.Zero;
+            TimeSpan timeSpan = TimeSpan.Zero;
+            if (start.Equals(start))
             {
                  int hour1 = timeSpan.Hours;
                   int min1 = timeSpan.Minutes;
@@ -24,7 +25,7 @@ namespace LogicalPrograms
                     int min2= timeSpan.Minutes;
                     int sec2= timeSpan.Seconds;
                     int milli2= timeSpan.Milliseconds;
-                    Console.WriteLine("stop watch time "+(hour2 - hour1)+" "+(min2-min1)+" "+(sec2-sec1)+" "+(milli2-milli1));
+                    Console.WriteLine("stop watch time "+(hour2 - hour1)+":"+(min2-min1)+":"+(sec2-sec1)+":"+(milli2-milli1));
                   }                       
             }                             
         }
