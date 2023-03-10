@@ -39,10 +39,14 @@ namespace LogicalPrograms
                         reverseNumber.Reverse(rum);
                         break;
                         case 5:
-                        Console.WriteLine("Enter Numbers From 0 to 6 Only");
-                        int wee= Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter Date");
+                        int day= Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter month");
+                        int month= Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Enter year");
+                        int year= Convert.ToInt32(Console.ReadLine());
                         DayOfWeek dayOfWeek = new DayOfWeek();
-                        dayOfWeek.week(wee);
+                        dayOfWeek.week(day,month,year);
                         break; 
                         case 6:
                         Console.WriteLine("Select Option 1.Celsius to Fahrenheit 2.Fahrenheit to  Celsius ");
