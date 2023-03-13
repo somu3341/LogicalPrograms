@@ -8,9 +8,9 @@ namespace LogicalPrograms
             bool flag = true;
             while (flag) 
             {
-                Console.WriteLine("1.FibonacciSeries \n2.Perfect Number \n3.Prime Number \n4.Reverse Number " +
+                Console.WriteLine("\n1.FibonacciSeries \n2.Perfect Number \n3.Prime Number \n4.Reverse Number " +
                     "\n5.Day of Week \n6.Temperature Conversion \n7.Monthaly Payment \n8.Coupen Number " +
-                    "\n9. Stop Watch \n10.VendingMachine \n11.Square Root \n12.Exit");
+                    "\n9. Stop Watch \n10.VendingMachine \n11.Square Root \n12.Decimal to Binary \n13.Exit");
                 Console.WriteLine("Enter option which need's to be Executed");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option) 
@@ -89,7 +89,13 @@ namespace LogicalPrograms
                         SquareRoot squareRoot = new SquareRoot();
                         squareRoot.newton(root);
                         break;
-                    case 12:
+                        case 12:
+                        Console.WriteLine("Enter a number to be convert from decimal to binary");
+                        int bin=Convert.ToInt32(Console.ReadLine());
+                        DecimalToBinary decimalToBinary = new DecimalToBinary();
+                        decimalToBinary.binary(bin);
+                        break;
+                    case 13:
                         flag = false;
                         break;
                 }
