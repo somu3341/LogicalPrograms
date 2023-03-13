@@ -9,7 +9,8 @@ namespace LogicalPrograms
             while (flag) 
             {
                 Console.WriteLine("1.FibonacciSeries \n2.Perfect Number \n3.Prime Number \n4.Reverse Number " +
-                    "\n5.Day of Week \n6.Temperature Conversion \n7.Monthaly Payment \n8.Coupen Number \n9. Stop Watch \n10.VendingMachine \n11.Exit");
+                    "\n5.Day of Week \n6.Temperature Conversion \n7.Monthaly Payment \n8.Coupen Number " +
+                    "\n9. Stop Watch \n10.VendingMachine \n11.Square Root \n12.Exit");
                 Console.WriteLine("Enter option which need's to be Executed");
                 int option = Convert.ToInt32(Console.ReadLine());
                 switch (option) 
@@ -82,7 +83,13 @@ namespace LogicalPrograms
                         VendingMachine vendingMachine = new VendingMachine();
                         vendingMachine.changereturned(vend);
                         break;
-                    case 11:
+                        case 11:
+                        Console.WriteLine("Enter a amount");
+                        int root = Convert.ToInt32(Console.ReadLine());
+                        SquareRoot squareRoot = new SquareRoot();
+                        squareRoot.newton(root);
+                        break;
+                    case 12:
                         flag = false;
                         break;
                 }
